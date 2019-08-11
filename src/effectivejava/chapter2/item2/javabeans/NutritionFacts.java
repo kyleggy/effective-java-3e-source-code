@@ -1,5 +1,8 @@
 package effectivejava.chapter2.item2.javabeans;
 
+import java.util.Collections;
+import java.util.EnumSet;
+
 // JavaBeans Pattern - allows inconsistency, mandates mutability  (pages 11-12)
 public class NutritionFacts {
     // Parameters initialized to default values (if any)
@@ -26,5 +29,8 @@ public class NutritionFacts {
         cocaCola.setCalories(100);
         cocaCola.setSodium(35);
         cocaCola.setCarbohydrate(27);
+        //Collections.binarySearch()
+
+
     }
 }
