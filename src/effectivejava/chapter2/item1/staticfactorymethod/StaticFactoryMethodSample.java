@@ -15,11 +15,21 @@ import java.util.*;
 public class StaticFactoryMethodSample {
 
 
-
     public static void main(String[] args) {
+
+        Boolean bool = Boolean.valueOf("true");
+        System.out.println(bool);
+
+
+        BigInteger bigInteger = BigInteger.probablePrime(10, new Random(1));
+        System.out.println(bigInteger);
+
+        Set set = Collections.emptySet();
+
         Date d = Date.from(Instant.now());
         System.out.println(d);
 
+        //https://www.baeldung.com/java-enumset
         Set<Rank> faceCards = EnumSet.of(Rank.JACK, Rank.KING, Rank.SOLIDER);
         System.out.println(faceCards);
 

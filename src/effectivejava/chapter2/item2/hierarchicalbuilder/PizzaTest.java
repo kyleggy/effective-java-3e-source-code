@@ -10,8 +10,10 @@ public class PizzaTest {
                 .addTopping(SAUSAGE).addTopping(ONION).build();
         Calzone calzone = new Calzone.Builder()
                 .addTopping(HAM).sauceInside().build();
-        
+
+        SugarPizza sugarPizza = new SugarPizza.Builder(SugarPizza.Degree.HEAVY).addTopping(PEPPER).name("Scott").build();
         System.out.println(pizza);
         System.out.println(calzone);
+        System.out.println(sugarPizza);
     }
 }
